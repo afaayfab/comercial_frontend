@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/candaya.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/newOrder.js"></script>
+    candaya.css
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?73c27e26f610eb3c9f3feb0c75b03925";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+
+<body>
+
+    <div data-role="page">
+        <div data-role="header">
+            <h1>Nuevo pedido</h1>
+        </div>
+
+        <form>
+            <div class="ui-field-contain" style="margin: 15px;">
+
+                <label for="npalents">Nº Palets:</label>
+                <input type="number" data-clear-btn="true" step="1" min="0" data-clear-btn="true" data-role="number" name="npalents" id="npalents"
+                    value="">
+            </div>
+            <div class="ui-field-contain" style="margin: 15px;">
+
+                <label for="text-12">Tipo palet:</label>
+
+                <select id="filter-menu" data-native-menu="false">
+                    <option value="p1">Tipo palet 1</option>
+                    <option value="p2">Tipo palet 2</option>
+                    <option value="p3">Tipo palet 3</option>
+                    <option value="p4">Tipo palet 4</option>
+                </select>
+            </div>
+            <div class="ui-field-contain" style="margin: 15px;">
+                <label for="text-12">Producto:</label>
+                <select id="filter-producto" data-native-menu="false">
+                    <option value="p1">Melocotones</option>
+                    <option value="p2">Naranjas</option>
+                    <option value="p3">Mandarinas</option>
+                    <option value="p4">Cerezas</option>
+                </select>
+            </div>
+            <div class="ui-field-contain" style="margin: 15px;">
+                <label for="text-12">Producto:</label>
+                <select id="filter-calibre" data-native-menu="false">
+                    <option value="p1">Calibre 1</option>
+                    <option value="p2">Calibre 2</option>
+                    <option value="p3">Calibre 3</option>
+                    <option value="p4">Calibre 4</option>
+                </select>
+            </div>
+
+            <div class="ui-field-contain" style="margin: 15px;">
+                <label for="npalents">Nº Cajas:</label>
+                <input type="number" data-clear-btn="true" step="1" min="0" data-clear-btn="true" data-role="number" name="ncajas" id="ncajas"
+                    value="">
+            </div>
+
+            <div class="ui-field-contain" style="margin: 15px;">
+                    <label for="npalents">Precio Kg:</label>
+                    <input type="number" data-clear-btn="true" step="1" min="0" data-clear-btn="true" data-role="number" name="ncajas" id="ncajas"
+                        value="">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

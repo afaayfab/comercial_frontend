@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" href="themes/customcss.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="jqwidgets/styles/jqx.base.css" type="text/css" />
+    <link rel="stylesheet" href="jqwidgets/styles/jqx.darkblue.css" type="text/css" />
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqx-all.js"></script>
+    <script src="js/config/config.js"></script>
+    <script src="js/newOrderList.js"></script>
+
+</head>
+
+<body>
+
+    <div data-role="page" data-theme="a">
+        <div data-role="header">
+            <a id="gobackToIndexId" href="#" data-role="button" data-inline="true">Ir atrás</a>
+            <h1>Comercial</h1>
+        </div>
+
+        <div id="jqxLoader"></div>
+        <form>
+            <div class="ui-field-contain" style="margin: 15px;">
+                <label for="filter-cliente">Cliente:</label>
+                <select id="filter-cliente" data-native-menu="true">
+                        <option value="cl-1">Seleccione un cliente...</option>
+                </select>
+            </div>
+             <div class="ui-field-contain" style="margin: 15px;">
+                <label for="filter-centro">Centro:</label>
+                <select id="filter-centro" data-native-menu="true">
+                    <option value="cen-1">Seleccione un centro...</option>
+                </select>
+            </div>
+            <table data-role="table" data-theme="a" id="temp-table" data-mode="columntoggle" class="ui-responsive table-stroke">
+                <thead>
+                    <tr>
+                        <th>Acciones</th>
+                        <th>Producto</th>
+                        <th>Precio Kg.</th>
+                    </tr>
+
+                </thead>
+                <tbody id="newOrderListId">
+                   
+                </tbody>
+            </table>
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>

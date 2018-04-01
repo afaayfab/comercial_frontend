@@ -1,0 +1,104 @@
+.orderElement {
+	height: 8vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(248, 169, 23);
+	color: white;
+	font-weight: bold;
+	text-shadow: 0 1px 0 #eee;
+}
+.formOrder {
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(248, 169, 23);
+	color: white;
+	font-weight: bold;
+	text-shadow: 0 1px 0 #eee;
+}
+
+#custom-search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
+.newOrderListEditButtons{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login{
+    background-color: #f8a917 !important;
+    display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+}
+
+.login-input{
+    background: transparent;
+    border-top: transparent !important;
+    border-left: transparent !important;
+    border-right: transparent !important;
+    border-bottom: 3px solid !important;
+    font-weight: 200;
+    color: black;
+    padding-left: 0;
+    margin-bottom: 15px;
+}
+
+.addButtonPosition{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

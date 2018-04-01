@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/candaya.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" href="themes/customcss.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="jqwidgets/styles/jqx.base.css" type="text/css" />
+    <link rel="stylesheet" href="jqwidgets/styles/jqx.darkblue.css" type="text/css" />
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqx-all.js"></script>
+    <script src="js/config/config.js"></script>
+    <script src="js/newOrder.js"></script>
+
+
+</head>
+
+<body>
+
+    <div data-role="page">
+        <div data-role="header">
+            <a id="cancelId" href="#" data-role="button" data-inline="true">Cancelar</a>
+            <h1>Nuevo pedido</h1>
+        </div>
+
+        <form>
+            <div id="jqxLoader"></div>
+            <div class="ui-field-contain" style="margin: 15px;">
+
+                <label for="npalents">Nº Palets:</label>
+                <input type="number" data-clear-btn="true" step="1" min="0" data-clear-btn="true" data-role="number" name="npalents" id="npalents"
+                    value="">
+            </div>
+            <div class="ui-field-contain" style="margin: 15px;">
+
+                <label for="tipoPalet">Tipo palet:</label>
+
+                <select id="tipoPalet" data-native-menu="true">
+                    <option id="p-1">Seleccione palet...</option>
+                </select>
+            </div>
+            <div class="ui-field-contain" style="margin: 15px;">
+                <label for="filter-producto">Producto:</label>
+                <select id="filter-producto" data-native-menu="true">
+                    <option id="pr-1">Seleccione producto...</option>
+                </select>
+            </div>
+            <div class="ui-field-contain" style="margin: 15px;">
+                <label for="filter-calibre">Calibre:</label>
+                <select id="filter-calibre" data-native-menu="true">
+                    <option id="ca-1">Seleccione calibre...</option>>
+                </select>
+            </div>
+
+            <div class="ui-field-contain" style="margin: 15px;">
+                <label for="npalents">Nº Cajas:</label>
+                <input type="number" data-clear-btn="true" step="1" min="0" data-clear-btn="true" data-role="number" name="ncajas" id="ncajas"
+                    value="">
+            </div>
+
+            <div class="ui-field-contain" style="margin: 15px;">
+                <label for="preciokg">Precio Kg:</label>
+                <input type="number" data-clear-btn="true" step="1" min="0" data-clear-btn="true" data-role="number" name="ncajas" id="preciokg"
+                    value="">
+            </div>
+            <div class="addButtonPosition">
+                <a id="addProductButton" href="#" style="width:100px;margin-right: 15px;" data-role="button" data-inline="true">Añadir</a>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

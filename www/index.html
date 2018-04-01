@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="css/candaya.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" href="themes/customcss.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="jqwidgets/styles/jqx.base.css" type="text/css" />
+    <link rel="stylesheet" href="jqwidgets/styles/jqx.darkblue.css" type="text/css" />
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqx-all.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/config/config.js"></script>
+</head>
+
+<body>
+    <div id="jqxLoader"></div>
+    <div class="login" data-role="page">
+        <form action="http://localhost:8080/login">
+            <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-user ui-btn-icon-notext">Delete</a>
+            <input type="text" class="login-input" name="usuarioInput" id="usuarioInput" placeholder="nombre usuario..." value="">
+            <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-lock ui-btn-icon-notext">Delete</a>
+            <input type="password" class="login-input" name="passwordInput" id="passwordInput" placeholder="su contraseña..." value="">
+            <a href="#" id="loginButtonId" style="margin-top:15px" data-role="button" data-icon="action">Iniciar</a>
+        </form>
+    </div>
+
+</body>
+
+</html>
